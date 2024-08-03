@@ -1,11 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Navbar from './components/Navbar/Navbar';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home/Home';
 
 
 const App = props => {
   return (
-    <div className='app'>
-
+    <div className='app w-[80%] m-auto'>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </div>
   )
 }
