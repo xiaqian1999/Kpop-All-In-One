@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 import { posts_list } from '../assets/assets'
 
 
@@ -22,6 +22,10 @@ const StoreContextProvider = (props) => {
     const contextValue = {
         posts_list, bookmarkItems, setBookmarkItems, addToBookmark, removeFromBookmark
     }
+
+    useEffect(() => {
+        console.log(bookmarkItems);
+    }, [bookmarkItems])
 
     return (
         <StoreContext.Provider value={contextValue}>
