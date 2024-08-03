@@ -15,10 +15,14 @@ import insta_post_img_09 from './insta_post_img_09.jpg'
 
 import bookmark_after from './bookmark_after.png'
 import bookmark_before from './bookmark_before.png'
+import header_img from './header_img.png'
+import logo from './logo.png'
 
 export const assets = {
     bookmark_after,
-    bookmark_before
+    bookmark_before,
+    header_img,
+    logo
 }
 
 export const transaction_option = [
