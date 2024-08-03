@@ -21,3 +21,8 @@
         opacity: 1;
     }
 }
+
+/* Explore Post */
+.explore-menu-list::-webkit-scrollbar{
+    display: none;
+}
