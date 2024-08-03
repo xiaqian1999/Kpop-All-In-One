@@ -50,7 +50,7 @@ export const posts_list = [
         insta_url: "https://www.instagram.com/p/C3RmsqnuIa3/?igsh=aHlxeDFlNW0yZDZw",
         post_image: insta_post_img_01,
         transaction_type: "WTS",
-        kpop_group: "Seventeen",
+        kpop_group: ["Seventeen", "Twice"],
         description: "Example of note, have: XYZ, want to sell for $3 each",
     },
     {
@@ -58,7 +58,7 @@ export const posts_list = [
         insta_url: "https://www.instagram.com/p/C3RmsqnuIa3/?igsh=aHlxeDFlNW0yZDZw",
         post_image: insta_post_img_02,
         transaction_type: "GO",
-        kpop_group: "Seventeen",
+        kpop_group: ["Seventeen"],
         description: "Example of note, have: XYZ, want to sell for $3 each",
     },
     {
@@ -66,7 +66,7 @@ export const posts_list = [
         insta_url: "https://www.instagram.com/p/C3RmsqnuIa3/?igsh=aHlxeDFlNW0yZDZw",
         post_image: insta_post_img_03,
         transaction_type: "WTS",
-        kpop_group: "Twice",
+        kpop_group: ["Twice"],
         description: "Example of note, have: XYZ, want to sell for $3 each",
     },
     {
@@ -74,7 +74,7 @@ export const posts_list = [
         insta_url: "https://www.instagram.com/p/C3RmsqnuIa3/?igsh=aHlxeDFlNW0yZDZw",
         post_image: insta_post_img_04,
         transaction_type: "WTT",
-        kpop_group: "Seventeen",
+        kpop_group: ["Seventeen"],
         description: "Example of note, have: XYZ, want to sell for $3 each",
     },
     {
@@ -82,7 +82,7 @@ export const posts_list = [
         insta_url: "https://www.instagram.com/p/C3RmsqnuIa3/?igsh=aHlxeDFlNW0yZDZw",
         post_image: insta_post_img_05,
         transaction_type: "WTT",
-        kpop_group: "Seventeen",
+        kpop_group: ["Seventeen"],
         description: "Example of note, have: XYZ, want to sell for $3 each",
     },
     {
@@ -90,7 +90,7 @@ export const posts_list = [
         insta_url: "https://www.instagram.com/p/C3RmsqnuIa3/?igsh=aHlxeDFlNW0yZDZw",
         post_image: insta_post_img_06,
         transaction_type: "WTS",
-        kpop_group: "Seventeen",
+        kpop_group: ["Seventeen"],
         description: "Example of note, have: XYZ, want to sell for $3 each",
     },
     {
@@ -98,7 +98,7 @@ export const posts_list = [
         insta_url: "https://www.instagram.com/p/C3RmsqnuIa3/?igsh=aHlxeDFlNW0yZDZw",
         post_image: insta_post_img_07,
         transaction_type: "WTB",
-        kpop_group: "Ive",
+        kpop_group: ["Ive", "Twice"],
         description: "Example of note, have: XYZ, want to sell for $3 each",
     },
     {
@@ -106,7 +106,7 @@ export const posts_list = [
         insta_url: "https://www.instagram.com/p/C3RmsqnuIa3/?igsh=aHlxeDFlNW0yZDZw",
         post_image: insta_post_img_08,
         transaction_type: "WTS",
-        kpop_group: "Seventeen",
+        kpop_group: ["Seventeen", "Twice", "Ive"],
         description: "Example of note, have: XYZ, want to sell for $3 each",
     },
     {
@@ -114,7 +114,7 @@ export const posts_list = [
         insta_url: "https://www.instagram.com/p/C3RmsqnuIa3/?igsh=aHlxeDFlNW0yZDZw",
         post_image: insta_post_img_09,
         transaction_type: "WTS",
-        kpop_group: "Twice",
+        kpop_group: ["Twice"],
         description: "Example of note, have: XYZ, want to sell for $3 each",
     }
 ]
