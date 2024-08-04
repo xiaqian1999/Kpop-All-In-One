@@ -23,9 +23,9 @@ const StoreContextProvider = (props) => {
         posts_list, bookmarkItems, setBookmarkItems, addToBookmark, removeFromBookmark
     }
 
-    useEffect(() => {
-        console.log(bookmarkItems);
-    }, [bookmarkItems])
+    // useEffect(() => {
+    //     console.log(bookmarkItems);
+    // }, [bookmarkItems])
 
     return (
         <StoreContext.Provider value={contextValue}>
