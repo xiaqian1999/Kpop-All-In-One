@@ -4,6 +4,8 @@ import { scammer_post_list } from '../assets/assets';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const SearchScammer = ({searchScammerKeyword, setSearchScammerKeyword}) => {
+
+    //Search Bar
     const filteredData = scammer_post_list.filter(item => {
         const term = searchScammerKeyword.toLowerCase();
         return (
