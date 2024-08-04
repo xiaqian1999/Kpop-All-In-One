@@ -1,10 +1,14 @@
 import React from 'react'
+import classNames from 'classnames';
 
 const ScammerPostItem = ({id, insta_url, username, date_of_post, user_type, platform_transaction, scammer_type, kpop_group, payment_info}) => {
 
-    // const scammerTypeColorClass = (type) => {
-    //     swit
-    // }
+    const scammerTypeColorClass = classNames({
+        'text-red-400': scammer_type === 'Potential Scammer',
+        'text-red-300': scammer_type === 'Bad Experience',
+        'text-red-200': scammer_type === 'Selective Scammer',
+        'text-gray-500': !['Potential Scammer', 'Bad Experience', 'Selective Scammer'].includes(scammer_type),
+    })
 
     return (
         <div key={id} className='w-full m-auto rounded-xl shadow-lg text-[15px] text-md' style={{ transition: '0.3s', animation: 'fadeIn 1s' }}>
@@ -13,7 +17,7 @@ const ScammerPostItem = ({id, insta_url, username, date_of_post, user_type, plat
                     Username: <p className='font-bold'>{username}</p>
                 </div>
                 <div className='mb-2'>
-                    <p>{scammer_type}</p>
+                    <p className={`${scammerTypeColorClass}`}>{scammer_type}</p>
                     <p>{user_type}</p>
                     <p>{date_of_post}</p>
                     <p>{payment_info}</p>
