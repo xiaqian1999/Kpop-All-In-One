@@ -10,10 +10,10 @@ const Navbar = () => {
     <div className='flex justify-between items-center py-10'>
       <img src={assets.logo} alt="logo" className='w-[150px]' />
       <ul className='flex list-none gap-[20px] text-lg items-center'>
-        <li onClick={() => {setMenu("home")}} className={`hover:text-red-300 cursor-pointer ${menu==="home" ? "border-b-red-300 text-red-300 " : ""}`}>Home</li>
-        <li onClick={() => {setMenu("transaction-section")}} className={`hover:text-red-300 cursor-pointer ${menu==="transaction-section" ? "border-b-red-300 text-red-300 " : ""}`}>Transaction</li>
-        <li onClick={() => {setMenu("scammer-section")}} className={`hover:text-red-300 cursor-pointer ${menu==="scammer-section" ? "border-b-red-300 text-red-300 " : ""}`}>Scammer Search</li>
-        <li onClick={() => {setMenu("contact-us")}} className={`hover:text-red-300 cursor-pointer ${menu==="contact-us" ? "border-b-red-300 text-red-300 " : ""}`}>Contact Us</li>
+        <li onClick={() => {setMenu("home")}} className={`hover:text-red-300 cursor-pointer ${menu==="home" ? "border-b-red-300 text-red-300 " : ""}`}><a href="#home">Home</a></li>
+        <li onClick={() => {setMenu("transaction-section")}} className={`hover:text-red-300 cursor-pointer ${menu==="transaction-section" ? "border-b-red-300 text-red-300 " : ""}`}><a href="#transaction-section">Transaction</a></li>
+        <li onClick={() => {setMenu("scammer-section")}} className={`hover:text-red-300 cursor-pointer ${menu==="scammer-section" ? "border-b-red-300 text-red-300 " : ""}`}><a href="#scammer-section">Scammer Search</a></li>
+        <li onClick={() => {setMenu("contact-us")}} className={`hover:text-red-300 cursor-pointer ${menu==="contact-us" ? "border-b-red-300 text-red-300 " : ""}`}><a href="#">Contact Us</a></li>
       </ul>
 
       <div className='flex items-center gap-[40px]'>
