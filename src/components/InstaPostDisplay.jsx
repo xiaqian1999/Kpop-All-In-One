@@ -8,6 +8,7 @@ const InstaPostDisplay = ({transactionType}) => {
   return (
     <div className='mt-5' id="insta-post-display">
         <h2 className='text-[30px] font-extrabold text-red-300'>Top Post</h2>
+        <hr className='my-2 h-[1px] bg-red-500 border-none' />
         <div className='food-display-list grid mt-5 gap-[30px]'>
             {posts_list.map((item, index) => {
                 //Display all InstaPostItems

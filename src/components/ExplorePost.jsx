@@ -13,8 +13,6 @@ const ExplorePost = ({transactionType,  setTransactionType}) => {
           )
         })}
       </div>
-
-      <hr className='my-2 h-[1px] bg-red-500 border-none' />
     </div>
   )
 }

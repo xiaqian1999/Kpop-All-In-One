@@ -8,17 +8,18 @@ const InstaPostItem = ({id, instaUrl, image, description, group, transaction_typ
 
     return (
         <div className='w-full m-auto rounded-xl shadow-lg' style={{ transition: '0.3s', animation: 'fadeIn 1s' }}>
-            <div className='img-container relative'>
+            <a href={instaUrl}>
                 <img src={image} alt={image} className='rounded-t-xl w-full'/>
-                {
-                    !bookmarkItems[id]
-                    ? <img onClick={()=> addToBookmark(id)} src={assets.bookmark_before} alt="bookmark_before" className='absolute w-[35px] bottom-2 right-2 cursor-pointer rounded-full'/>
-                    : <img onClick={()=> removeFromBookmark(id)} src={assets.bookmark_after} alt="bookmark_after" className='absolute w-[35px] bottom-2 right-2 cursor-pointer rounded-full'/>
-                }
-            </div>
+            </a>
+            
             <div className='item-info p-4'>
-                <div className='mb-2 flex flex-wrap'>
-                    <div className='px-2 py-1 bg-red-300 text-white rounded-md mr-2 text-sm overflow-auto mb-1'> #{transaction_type}</div>
+                <div className='mb-2 flex flex-wrap justify-between'>
+                    <div className='px-2 py-1 bg-red-300 text-white rounded-md mr-2 text-sm'> #{transaction_type}</div>
+                    {
+                        !bookmarkItems[id]
+                        ? <img onClick={()=> addToBookmark(id)} src={assets.bookmark_before} alt="bookmark_before" className='w-[30px] cursor-pointer'/>
+                        : <img onClick={()=> removeFromBookmark(id)} src={assets.bookmark_after} alt="bookmark_after" className='w-[30px] cursor-pointer'/>
+                    }
                 </div>
                 <div className='mb-2'>
                     <p className='text-[15px] text-md'>{description}</p>
