@@ -16,16 +16,20 @@ const SearchScammer = ({searchScammerKeyword, setSearchScammerKeyword}) => {
 
     return (
         <div className='mt-5' id="scammer-section">
-            <h2 className='text-[30px] font-extrabold text-red-300'>Scammer Search</h2>
-            <hr className='my-2 h-[1px] bg-red-500 border-none' />
-            <FontAwesomeIcon icon="fa-solid fa-magnifying-glass " />
-            <input 
-                type="text" 
-                placeholder='Search by username/paypal info' 
-                value={searchScammerKeyword} 
-                onChange={(e) => setSearchScammerKeyword(e.target.value)} 
-                className='w-full border border-red-300 py-2 px-4 rounded-full placeholder-slate-400'
-            />
+            <div className='flex flex-nowrap w-full'>
+                <h2 className='flex-1 text-[30px] font-extrabold text-red-300'>Scammer Search</h2>
+                <div className='flex-auto flex flex-wrap'>
+                    <input 
+                        type="text" 
+                        placeholder='Search by username/paypal info' 
+                        value={searchScammerKeyword} 
+                        onChange={(e) => setSearchScammerKeyword(e.target.value)} 
+                        className='w-4/5 border border-red-300 py-2 px-4 rounded-full placeholder-slate-400 mx-2'
+                    />
+                    <button className='bg-red-300 text-white py-1 px-3 rounded-full text-sm cursor-pointer hover:bg-red-400'>Add Scammer</button>
+                </div>
+            </div>
+            <hr className='my-5 h-[1px] bg-red-500 border-none' />
             <div className='display-list grid mt-5 gap-[30px]'>
                 {filteredData.length === 0 && <p>No Scammer Found</p>}
                 {filteredData.map((item, index) => {
