@@ -13,16 +13,27 @@ import insta_post_img_07 from './insta_post_img_07.jpg'
 import insta_post_img_08 from './insta_post_img_08.jpg'
 import insta_post_img_09 from './insta_post_img_09.jpg'
 
+import facebook_icon from './facebook.png'
+import instagram_icon from './instagram.png'
+import linkedin_icon from './linkedin.png'
+import twitter_icon from './twitter.png'
+
 import bookmark_after from './bookmark_after.png'
 import bookmark_before from './bookmark_before.png'
 import header_img from './header_img.png'
 import logo from './logo.png'
+import arrow_top from './arrow-top.png'
 
 export const assets = {
     bookmark_after,
     bookmark_before,
     header_img,
-    logo
+    logo,
+    facebook_icon,
+    instagram_icon,
+    linkedin_icon,
+    twitter_icon,
+    arrow_top
 }
 
 export const transaction_option = [
