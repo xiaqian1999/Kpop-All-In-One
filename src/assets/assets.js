@@ -23,6 +23,7 @@ import bookmark_before from './bookmark_before.png'
 import header_img from './header_img.png'
 import logo from './logo.png'
 import arrow_top from './arrow-top.png'
+import close_icon from './close_icon.png'
 
 export const assets = {
     bookmark_after,
@@ -33,7 +34,8 @@ export const assets = {
     instagram_icon,
     linkedin_icon,
     twitter_icon,
-    arrow_top
+    arrow_top,
+    close_icon
 }
 
 export const transaction_option = [
