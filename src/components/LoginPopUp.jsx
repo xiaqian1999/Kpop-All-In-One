@@ -5,7 +5,7 @@ const LoginPopUp = ({setShowLogin}) => {
     const [currState, setCurrState] = useState("Login")
 
     return (
-        <div className='absolute z-1 w-full h-full grid' style={{background: '#00000090', zIndex: 2}}>
+        <div className='fixed z-1 w-full h-full grid' style={{background: '#00000090', zIndex: 2}}>
             <form className='place-self-center w-[30vw] bg-white flex flex-col gap-4 rounded-lg text-md p-4' style={{animation: "fadeIn 0.5s"}}>
                 <div className='flex justify-between items-center text-black'>
                     <h2 className='text-lg font-semibold'>{currState}</h2>

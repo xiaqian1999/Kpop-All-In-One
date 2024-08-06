@@ -5,7 +5,7 @@ import InstaPostDisplay from '../components/InstaPostDisplay';
 import SearchScammer from '../components/SearchScammer';
 // import './Home.css';
 
-const Home = () => {
+const Home = ({setShowScammerPopUp}) => {
 
   const [transactionType, setTransactionType] = useState("All");
   const [searchScammerKeyword, setSearchScammerKeyword] = useState('');
@@ -15,7 +15,11 @@ const Home = () => {
       <Header />
       <ExplorePost transactionType={transactionType} setTransactionType={setTransactionType} />
       <InstaPostDisplay transactionType={transactionType} />
-      <SearchScammer searchScammerKeyword={searchScammerKeyword} setSearchScammerKeyword={setSearchScammerKeyword}/>
+      <SearchScammer 
+        searchScammerKeyword={searchScammerKeyword} 
+        setSearchScammerKeyword={setSearchScammerKeyword} 
+        setShowScammerPopUp={setShowScammerPopUp}
+      />
     </div>
   )
 }
