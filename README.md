@@ -14,9 +14,18 @@ Depencies in use: axios, express, stripe
 - User able to filter the post by the category
 - User able to filter the post by kpop group
 - User able to save the post they are interested
--
+- User able to search the post by keyword
 
 ### Backend
+
+- User able to create account to their profile page
+- User can check the interested post they saved
+- User can create transaction post
+- User can create scammer post
+
+### For Future
+
+- chat feature allows the user to direct message each other
 
 ### API
 
@@ -35,7 +44,7 @@ Depencies in use: axios, express, stripe
 - In index.css, need to include @tailwind base; @tailwind components; @tailwind utilities;
 - In tailwind.config.js, able to initialize page's main theme color, font family, screen size
 
-#### Font Awesome
+#### [Font Awesome](https://fontawesome.com/search?q=sear&o=r)
 
 - npm i --save @fortawesome/fontawesome-svg-core
   These are the free icons
@@ -44,7 +53,14 @@ Depencies in use: axios, express, stripe
 - npm i --save @fortawesome/free-brands-svg-icons
   Then install the Font Awesome React Component
 - npm i --save @fortawesome/react-fontawesome@latest
-- Then
+
+#### [IziModal](https://izimodal.marcelodolza.com/)
+
+- npm install izimodal --save
+
+#### [Selectize](https://selectize.dev/docs/intro)
+
+- npm install @selectize/selectize
 
 ### New Things Learn
 
