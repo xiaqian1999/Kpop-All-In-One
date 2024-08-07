@@ -6,7 +6,9 @@ import Home from './pages/Home';
 import Footer from './components/Footer'
 import LoginPopUp from './components/LoginPopUp';
 import AddScammerPopUp from './components/AddScammerPopUp';
-
+import Bookmark from './pages/Bookmark';
+import Scammer from './pages/Scammer';
+import Wts from './pages/Wts';
 
 const App = props => {
   const [showLogin, setShowLogin] = useState(false);
@@ -21,6 +23,9 @@ const App = props => {
         <Navbar setShowLogin={setShowLogin} />
         <Routes>
           <Route path="/" element={<Home setShowScammerPopUp={setShowScammerPopUp} />} />
+          <Route path="/bookmark" element={<Bookmark />} />
+          <Route path="/wts" element={<Wts />} />
+          <Route path="/scammer" element={<Scammer />} />
         </Routes>
       </div>
 
