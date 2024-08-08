@@ -19,8 +19,19 @@ const StoreContextProvider = (props) => {
         setBookmarkItems((prev) => ({...prev, [itemId]:0}))
     }
 
+    const getTotalBookmarkAmount = () => {
+        let totalAmount = 0;
+        for (const item in bookmarkItems){
+            if(bookmarkItems[item] > 0){
+                // let itemInfo = posts_list.find((post) =>  post._id === item);
+                totalAmount += 1
+            }
+        }
+        return totalAmount;
+    }
+
     const contextValue = {
-        posts_list, bookmarkItems, setBookmarkItems, addToBookmark, removeFromBookmark
+        posts_list, bookmarkItems, setBookmarkItems, addToBookmark, removeFromBookmark, getTotalBookmarkAmount
     }
 
     // useEffect(() => {
