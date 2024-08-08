@@ -2,13 +2,12 @@ import React, { useState } from 'react'
 import Header from '../components/Header'
 import ExplorePost from '../components/ExplorePost'
 import InstaPostDisplay from '../components/InstaPostDisplay';
-import SearchScammer from '../components/SearchScammer';
+import SearchScammer from '../pages/SearchScammer';
 // import './Home.css';
 
-const Home = ({setShowScammerPopUp}) => {
+const Home = ({setShowScammerPopUp, searchScammerKeyword, setSearchScammerKeyword}) => {
 
   const [transactionType, setTransactionType] = useState("All");
-  const [searchScammerKeyword, setSearchScammerKeyword] = useState('');
 
   return (
     <div>

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-// import './Navbar.css';
 import { assets } from '../assets/assets';
 import { Link } from 'react-router-dom';
 
@@ -17,7 +16,7 @@ const Navbar = ({setShowLogin}) => {
         <Link to="/wtt" onClick={() => {setMenu("wtt")}} className={`hover:text-red-300 cursor-pointer ${menu==="wtt" ? "text-red-300": ""}`}>WTT</Link>
         <Link to="/wtb" onClick={() => {setMenu("wtb")}} className={`hover:text-red-300 cursor-pointer ${menu==="wtb" ? "text-red-300": ""}`}>WTB</Link>
         <Link to="/go" onClick={() => {setMenu("go")}} className={`hover:text-red-300 cursor-pointer ${menu==="go" ? "text-red-300": ""}`}>GO</Link>
-        <Link to="/scammer" onClick={() => {setMenu("scammer-search")}} className={`hover:text-red-300 cursor-pointer ${menu==="scammer-search" ? "text-red-300" : ""}`}>Scammer Search</Link>
+        <Link to="/scammer" onClick={() => {setMenu("scammer")}} className={`hover:text-red-300 cursor-pointer ${menu==="scammer" ? "text-red-300" : ""}`}>Scammer Search</Link>
 
         {/* <a href="#transaction-section" onClick={() => {setMenu("transaction-section")}} className={`hover:text-red-300 cursor-pointer ${menu==="transaction-section" ? "text-red-300 " : ""}`}>Transaction</a>
         <a href="#scammer-section" onClick={() => {setMenu("scammer-section")}} className={`hover:text-red-300 cursor-pointer ${menu==="scammer-section" ? "text-red-300 " : ""}`}>Scammer Search</a>

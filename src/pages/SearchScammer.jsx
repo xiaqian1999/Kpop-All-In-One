@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import ScammerPostItem from './ScammerPostItem';
+import ScammerPostItem from '../components/ScammerPostItem';
 import { scammer_post_list } from '../assets/assets';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -15,7 +15,8 @@ const SearchScammer = ({searchScammerKeyword, setSearchScammerKeyword, setShowSc
     })
 
     return (
-        <div className='mt-5' id="scammer-section">
+        // <div className='mt-5' id="scammer-section">
+        <div className='mt-5'>
             <div className='flex flex-nowrap w-full'>
                 <h2 className='flex-1 text-[30px] font-extrabold text-red-300'>Scammer Search</h2>
                 <div className='flex-auto flex flex-wrap'>
