@@ -12,10 +12,16 @@ const Navbar = ({setShowLogin}) => {
       <Link to="/"><img src={assets.logo} alt="logo" className='w-[150px]' /></Link>
 
       <ul className='flex list-none gap-[20px] text-lg items-center'>
-        <Link to="/" onClick={() => {setMenu("home")}} className={`hover:text-red-300 cursor-pointer ${menu==="home" ? "border-b-red-300 text-red-300 " : ""}`}>Home</Link>
-        <a href="#transaction-section" onClick={() => {setMenu("transaction-section")}} className={`hover:text-red-300 cursor-pointer ${menu==="transaction-section" ? "border-b-red-300 text-red-300 " : ""}`}>Transaction</a>
-        <a href="#scammer-section" onClick={() => {setMenu("scammer-section")}} className={`hover:text-red-300 cursor-pointer ${menu==="scammer-section" ? "border-b-red-300 text-red-300 " : ""}`}>Scammer Search</a>
-        <a href="#contact-us" onClick={() => {setMenu("contact-us")}} className={`hover:text-red-300 cursor-pointer ${menu==="contact-us" ? "border-b-red-300 text-red-300 " : ""}`}>Contact Us</a>
+        <Link to="/" onClick={() => {setMenu("home")}} className={`hover:text-red-300 cursor-pointer ${menu==="home" ? "text-red-300 " : ""}`}>Home</Link>
+        <Link to="/wts" onClick={() => {setMenu("wts")}} className={`hover:text-red-300 cursor-pointer ${menu==="wts" ? "text-red-300": ""}`}>WTS</Link>
+        <Link to="/wtt" onClick={() => {setMenu("wtt")}} className={`hover:text-red-300 cursor-pointer ${menu==="wtt" ? "text-red-300": ""}`}>WTT</Link>
+        <Link to="/wtb" onClick={() => {setMenu("wtb")}} className={`hover:text-red-300 cursor-pointer ${menu==="wtb" ? "text-red-300": ""}`}>WTB</Link>
+        <Link to="/go" onClick={() => {setMenu("go")}} className={`hover:text-red-300 cursor-pointer ${menu==="go" ? "text-red-300": ""}`}>GO</Link>
+        <Link to="/scammer" onClick={() => {setMenu("scammer-search")}} className={`hover:text-red-300 cursor-pointer ${menu==="scammer-search" ? "text-red-300" : ""}`}>Scammer Search</Link>
+
+        {/* <a href="#transaction-section" onClick={() => {setMenu("transaction-section")}} className={`hover:text-red-300 cursor-pointer ${menu==="transaction-section" ? "text-red-300 " : ""}`}>Transaction</a>
+        <a href="#scammer-section" onClick={() => {setMenu("scammer-section")}} className={`hover:text-red-300 cursor-pointer ${menu==="scammer-section" ? "text-red-300 " : ""}`}>Scammer Search</a>
+        <a href="#contact-us" onClick={() => {setMenu("contact-us")}} className={`hover:text-red-300 cursor-pointer ${menu==="contact-us" ? "text-red-300 " : ""}`}>Contact Us</a> */}
       </ul>
 
       <div className='flex items-center gap-[40px]'>

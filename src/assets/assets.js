@@ -23,6 +23,7 @@ import bookmark_before from './bookmark_before.png'
 import header_img from './header_img.png'
 import logo from './logo.png'
 import arrow_top from './arrow-top.png'
+import arrow_down from './arrow-down.png'
 import close_icon from './close_icon.png'
 
 export const assets = {
@@ -35,6 +36,7 @@ export const assets = {
     linkedin_icon,
     twitter_icon,
     arrow_top,
+    arrow_down,
     close_icon
 }
 
