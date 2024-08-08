@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import ScammerPostItem from '../components/ScammerPostItem';
 import { scammer_post_list } from '../assets/assets';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const SearchScammer = ({searchScammerKeyword, setSearchScammerKeyword, setShowScammerPopUp}) => {
 

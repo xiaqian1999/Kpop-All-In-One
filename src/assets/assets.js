@@ -13,6 +13,24 @@ import insta_post_img_07 from './insta_post_img_07.jpg'
 import insta_post_img_08 from './insta_post_img_08.jpg'
 import insta_post_img_09 from './insta_post_img_09.jpg'
 
+import group_aespa from './group_aespa.png'
+import group_blackpink from './group_blackpink.png'
+import group_bts from './group_seventeen.png'
+import group_exo from './group_exo.png'
+import group_gfriend from './group_gfriend.png'
+import group_gidle from './group_gidle.png'
+import group_got7 from './group_got7.png'
+import group_ikon from './group_ikon.png'
+import group_itzy from './group_itzy.png'
+import group_mamamoo from './group_mamamoo.png'
+import group_nct from './group_nct.png'
+import group_redvelvet from './group_redvelvet.png'
+import group_seventeen from './group_seventeen.png'
+import group_shinee from './group_shinee.png'
+import group_superm from './group_superm.png'
+import group_twice from './group_twice.png'
+
+
 import facebook_icon from './facebook.png'
 import instagram_icon from './instagram.png'
 import linkedin_icon from './linkedin.png'
@@ -56,6 +74,73 @@ export const transaction_option = [
     {
         transaction_name: "GO",
         transaction_image: go_icon
+    }
+]
+
+export const kpop_groups = [
+    {
+        group_name: "aespa",
+        group_image: group_aespa 
+    },
+    {
+        group_name: "blackpink",
+        group_image: group_blackpink 
+    },
+    {
+        group_name: "bts",
+        group_image: group_bts 
+    },
+    {
+        group_name: "exo",
+        group_image: group_exo 
+    },
+    {
+        group_name: "gfriend",
+        group_image: group_gfriend 
+    },
+    {
+        group_name: "gidle",
+        group_image: group_gidle 
+    },
+    {
+        group_name: "got7",
+        group_image: group_got7 
+    },
+    {
+        group_name: "ikon",
+        group_image: group_ikon 
+    },
+    {
+        group_name: "itzy",
+        group_image: group_itzy 
+    },
+    {
+        group_name: "mamamoo",
+        group_image: group_mamamoo 
+    },
+    {
+        group_name: "nct",
+        group_image: group_nct 
+    },
+    {
+        group_name: "redvelvet",
+        group_image: group_redvelvet 
+    },
+    {
+        group_name: "shinee",
+        group_image: group_shinee 
+    },
+    {
+        group_name: "superm",
+        group_image: group_superm 
+    },
+    {
+        group_name: "twice",
+        group_image: group_twice 
+    },
+    {
+        group_name: "seventeen",
+        group_image: group_seventeen 
     }
 ]
 
