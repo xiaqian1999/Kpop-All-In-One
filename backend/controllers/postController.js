@@ -35,4 +35,19 @@ const listPost = async (req, res) => {
     }
 }
 
-export {addPost, listPost}
+const removePost = async (req, res) => {
+    try {
+        const post = await postModel.findById(req.body.id)
+        //fs = file system
+        fs.unlink(`uploads/${post.image}`, ()=>{})
+
+        //delete the data from the mongo db with the given id
+        await postModel.findByIdAndDelete(req.body.id);
+        res.json({success:true, message:"Post Removed"})
+    } catch (error) {
+        console.log(error)
+        res.json({success:false, message:"Error"})
+    }
+}
+
+export {addPost, listPost, removePost}

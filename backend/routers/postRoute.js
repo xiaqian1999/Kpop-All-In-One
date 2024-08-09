@@ -1,5 +1,5 @@
 import express from "express";
-import { addPost, listPost } from "../controllers/postController.js";
+import { addPost, listPost, removePost } from "../controllers/postController.js";
 import multer from "multer";
 
 const postRouter = express.Router();
@@ -16,6 +16,6 @@ const upload = multer({storage:storage})
 
 postRouter.post("/add", upload.single("image"),addPost)
 postRouter.get("/list", listPost)
-
+postRouter.post("/remove", removePost)
 
 export default postRouter;
