@@ -13,3 +13,9 @@
    - axios: create the network request for GET, POST
    - react-toastify: create the toast notification
    - import { ToastContainer, toast } from 'react-toastify'; import 'react-toastify/dist/ReactToastify.css';
+6. Tailwind setup:
+   - npm install -D tailwindcss postcss autoprefixer
+   - npx tailwindcss init -p
+   - Install VScode extension: Tailwind css IntelliSense for autocomplete for the tailwind
+   - In index.css, need to include @tailwind base; @tailwind components; @tailwind utilities;
+   - In tailwind.config.js, able to initialize page's main theme color, font family, screen size
