@@ -8,4 +8,8 @@
    - Delete App.css
    - Clear index.css and App.jsx
    - Rename the title inside the index.html
-4. Import font into the css
+4. Import font into the css and assets
+5. npm install axios react-toastify react-router-dom
+   - axios: create the network request for GET, POST
+   - react-toastify: create the toast notification
+   - import { ToastContainer, toast } from 'react-toastify'; import 'react-toastify/dist/ReactToastify.css';
