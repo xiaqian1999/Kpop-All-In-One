@@ -3,8 +3,8 @@ import { assets } from '../assets/assets';
 import axios from "axios";
 import { toast } from 'react-toastify';
 
-const AddPost = () => {
-    const url = "http://localhost:4000";
+const AddPost = ({url}) => {
+    
     const [image, setImage] = useState(false)
     const [data, setData] = useState({
         insta_url: "",

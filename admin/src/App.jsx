@@ -8,6 +8,8 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
+  const url = "http://localhost:4000";
+
   return (
     <div>
       <ToastContainer />
@@ -16,8 +18,8 @@ const App = () => {
       <div className='app-content'>
         <Sidebar />
         <Routes>
-          <Route path="/addpost" element={<AddPost />} />
-          <Route path="/listpost" element={<ListPost />} />
+          <Route path="/addpost" element={<AddPost  url={url} />} />
+          <Route path="/listpost" element={<ListPost  url={url} />} />
         </Routes>
       </div>
     </div>

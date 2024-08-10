@@ -2,18 +2,28 @@ import React, { useEffect, useState } from 'react'
 import axios from "axios"
 import { toast } from 'react-toastify'
 
-const ListPost = () => {
-    const url = "http://localhost:4000";
+const ListPost = ({url}) => {
     const [list, setList] = useState([]);
 
     const fetchList = async () => {
         const response = await axios.get(`${url}/api/post/list`);
-        console.log(response.data);
 
         if (response.data.success) {
             setList(response.data.data);
         }else{
             toast.error("Error")
+        }
+    }
+
+    const removePost = async (postId) => {
+        const response = await axios.post(`${url}/api/post/remove`, {id:postId});
+        //update list
+        await fetchList();
+
+        if (response.data.success) {
+            toast.success(response.data.message)
+        }else{
+            toast.error(response.data.message)
         }
     }
 
@@ -39,7 +49,7 @@ const ListPost = () => {
                             <p>{item.transaction_type}</p>
                             <p>{item.kgroup_name}</p>
                             <a href={item.insta_url} target="_blank">Click to View</a>
-                            <p>Remove</p>
+                            <p onClick={() => removePost(item._id)}>Remove</p>
                         </div>
                     )
                 })}
