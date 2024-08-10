@@ -4,10 +4,13 @@ import Sidebar from './components/Sidebar'
 import { Routes, Route} from 'react-router-dom'
 import ListPost from './pages/ListPost'
 import AddPost from './pages/AddPost'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   return (
     <div>
+      <ToastContainer />
       <Navbar />
       <hr />
       <div className='app-content'>
